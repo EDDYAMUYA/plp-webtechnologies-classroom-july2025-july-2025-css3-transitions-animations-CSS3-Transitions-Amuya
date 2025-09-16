@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <p>Explore CSS animations and JavaScript interactivity</p>
+    </header>
+
+    <main>
+        <section id="dark-light-mode">
+            <h2>Dark/Light Mode Toggle</h2>
+            <p>Switch between dark and light themes for comfortable viewing in any lighting condition.</p>
+            <div class="toggle-container">
+                <span>Light</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider"></span>
+                </label>
+                <span>Dark</span>
+            </div>
+        </section>
+
+        <section id="counter-game">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to increase, decrease, or reset the counter. Try to get to exactly 10!</p>
+            <div class="counter-display" id="counter-value">0</div>
+            <div class="counter-controls">
+                <button id="decrement-btn">-1</button>
+                <button id="reset-btn">Reset</button>
+                <button id="increment-btn">+1</button>
+                <button id="increment-five-btn">+5</button>
+            </div>
+        </section>
+
+        <section id="animation-section">
+            <h2>CSS Animation Controls</h2>
+            <p>Use JavaScript to trigger these CSS animations dynamically.</p>
+            <div class="animation-box" id="animation-target">Box</div>
+            <div class="animation-controls">
+                <button id="bounce-btn">Bounce</button>
+                <button id="pulse-btn">Pulse</button>
+                <button id="flip-btn">Flip</button>
+                <button id="fade-out-btn">Fade Out</button>
+                <button id="reset-animation-btn">Reset</button>
+            </div>
+        </section>
+
+        <section id="card-flip">
+            <h2>Card Flip Animation</h2>
+            <p>Click on the card to flip it and see the back side.</p>
+            <div class="card-container">
+                <div class="card" id="card">
+                    <div class="card-front">Front</div>
+                    <div class="card-back">Back</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <p>Please fill out the form below. All fields are required.</p>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter your full name (at least 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                    <div class="error" id="message-error">Please enter a message (at least 10 characters)</div>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+            </form>
+            <div class="success-message" id="success-message">
+                Form submitted successfully! Thank you.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive Web Page Assignment &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
